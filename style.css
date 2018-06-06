@@ -1,0 +1,43 @@
+body{
+    margin: 0; /* no existira el margen por defecto*/
+
+} 
+
+.encabezado, .contenido, .contenido-lateral, .pie-pagina{
+    padding: 1em 2em; /* mantenga un lijero margen con los elementos q contiene adentro */
+
+}
+
+.contenido, .contenido-lateral, .pie-pagina{
+float: left; /* sin esta prop, no se tiene al footer abajo */
+box-sizing: border-box; /* nuestro elemento mantengan su tamano definido porq con padding tienenden a expandirse. Con esto el pad crea un margen interno sin tener q expandir el elemen */
+
+}
+
+.encabezado{
+    background-color: rgb(247, 220, 22);
+    height: 100px;
+
+}
+
+.contenido{
+    width: 60%;
+}
+
+.contenido-lateral{
+    width: 40%;
+    background-color: rgb(163, 163, 113);
+    height: 500px;
+}
+
+.post{
+    background-color: rgba(117, 255, 26, 0.46);
+    height: 100px;
+    margin-bottom: 16px;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #000;
+    height: 50px;
+}
